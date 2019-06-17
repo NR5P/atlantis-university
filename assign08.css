@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 60px;
+}
+
+/*****************************navbar*********************************/
+
+nav {
+    background-color: #6699ff;
+    font-size: 20px;
+}
+
+nav  a {
+    padding: 17px 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+nav img {
+    height: 60px;
+    vertical-align: middle;
+}
+
+/*******************************************************************/
+/**************************footer***********************************/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6699ff;
+    color: black;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 60px;
+    display: inline-block;
+}
+/*******************************************************************/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 6rem;
+    font-weight: 100;
+    color: #6699ff;
+    text-align: center;
+}
+
+#university-pic {
+    margin: 0 auto;
+    display: block;
+}
+
+/**************************academics**********************************/
+p {
+    font-size: 1.2rem;
+    color: #ff6699;
+    margin: auto;
+    width: 400px;
+}
+
+.academics-wrapper {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-row-gap: 80px;
+    justify-items: start;
+}
+/**********************************************************************/
+
+/*************************athletics************************************/
+.athletics-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 20px;
+}
+
+.side-bar {
+    display: grid;
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2em;
+    padding-bottom: 1.2em;
+}
+.side-bar a:nth-child(odd) {
+    color: red;
+}
+
+.side-bar a:hover {
+    color: black;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.main-content img {
+    width: 250px;
+    justify-self: center;
+}
+.main-content h3 {
+    justify-self: center;
+    color: red;
+}
+/**********************************************************************/
+
+/****************************arts**************************************/
+.art-background {
+    background-image: url(./images/art-bridge.jpeg);
+    background-color: thistle;
+    background-blend-mode: color-dodge;
+    height: 100%;
+}
+/************************************************************************/
+
+@media screen and (max-width: 720px) {
+    #nav-links  img{
+        display: block;
+        margin: auto;
+    }
+    #nav-links  a{
+        display: block;
+        text-align: center;
+    }
+    footer a{
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .athletics-wrapper {
+      grid-template-columns: 1fr;
+  }
+  .side-bar {
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+  }
+  .main-content {
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+  }
+  h3 {
+      font-size: 1.6em;
+  }
+}
