@@ -67,6 +67,8 @@ h1 {
 #university-pic {
     margin: 0 auto;
     display: block;
+    width: 80%;
+    padding-bottom: 100px;
 }
 
 /**************************academics**********************************/
@@ -128,7 +130,7 @@ p {
 
 /****************************arts**************************************/
 .art-background {
-    background-image: url(./images/art-bridge.jpeg);
+    background-image: url(./assign08-images/art-bridge.jpeg);
     background-color: thistle;
     background-blend-mode: color-dodge;
     height: 100%;
@@ -147,6 +149,12 @@ p {
     footer a{
         padding: 1em;
     }
+    .academics-wrapper {
+        grid-template-columns: 1fr;        
+    }
+    .academics-wrapper p {
+        border-top: 1px solid black;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -163,5 +171,16 @@ p {
   }
   h3 {
       font-size: 1.6em;
+  }
+
+  .academics-wrapper {
+      justify-items: center;
+  }
+  .academics-wrapper p {
+      width: 200px;
+  }
+  .academics-wrapper img {
+      width: 300px;
+      height: auto;
   }
 }
